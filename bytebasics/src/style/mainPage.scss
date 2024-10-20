@@ -10,6 +10,7 @@ $jsColor: #E9D555;
 @tailwind utilities;
 
 body {
+  font-family: "Roboto", sans-serif;
   padding: 4rem 6rem 0rem 6rem;
   background-color: white;
 }
@@ -18,6 +19,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 7rem;
   .iconsBox {
     display: flex;
     align-items: center;
@@ -31,5 +33,31 @@ header {
     width: 5rem;
     height: 3.7rem;
     background-color: violet;
+  }
+}
+
+.heroSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: 4.688rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  p{
+    font-size: 1.563rem;
+    line-height:  2.813rem;
+    letter-spacing: 3%;
+    width: 75%;
+  }
+}
+
+
+
+@media (min-width: 1440px) {
+  body {
+    background-color: gainsboro;
+    padding: 6rem 20rem 0rem 20rem;
   }
 }
