@@ -6,8 +6,8 @@ $cssColor: #7089E8;
 $jsColor: #E9D555;
 
 .heroSection {
-    margin-top: 6rem;   
-    img {
+    margin-top: 4.5rem;   
+    .human {
         display: none;
     } 
 }
@@ -15,19 +15,104 @@ $jsColor: #E9D555;
     h1 {
         font-size: 2.5rem;
         margin-bottom: 1rem;
+        letter-spacing: 3%;
         font-weight: 500;
     }
     p {
         font-size: 1rem;
         opacity: 75%;
+        letter-spacing: 3%;
         line-height: 30px;
     }
     button {
-        margin-top: 4rem;
+        margin-top: 3rem;
         width: 16rem;
         height: 4.5rem;
         border-radius: 12px;
         background-color: $mainColor;
         color: white;
+    }
+}
+
+.arrow {
+    position: absolute;
+    bottom: -7%;
+    width: 5rem;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+    animation: arrowMove 3s linear 0.5s infinite normal;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    width: 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-size: 2.5rem;
+    border-right: .15em solid $mainColor;
+    letter-spacing: 3%;
+    white-space: nowrap;
+    animation: typing 1s linear 0.5s infinite normal;
+    overflow: hidden;
+    animation: 
+    typing 3s steps(30, end) forwards,
+    blink-caret .75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { 
+        width: 65%;    
+    }
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { 
+        border-right: 3px solid $mainColor;
+        border-color: $mainColor; 
+    }
+  }
+
+@media (min-width: 1000px) {
+    .heroSection {
+        display: flex;
+    }
+    .heroText {
+        h1 {
+            font-size: 3rem;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 35px;
+        }
+        button {
+            width: 18rem;
+            height: 5rem;
+            font-size: 1.2rem;
+        }
+    }
+    .human {
+        display: block !important;
+        height: 20rem;
+    }
+}
+
+
+@keyframes arrowMove {
+    0% {
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%,-75%);
+    }
+    50% {
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%,-50%);
+    }
+    100% {
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%,-75%);
     }
 }

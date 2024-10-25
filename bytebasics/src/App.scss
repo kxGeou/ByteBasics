@@ -1,7 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+$textColor: #1D1D1F;
+$mainColor: #5F43B2;
+$secondColor: #BE6FFB;
+$htmlColor: #E8765A;
+$cssColor: #7089E8;
+$jsColor: #E9D555;
+
 
 body {
   background-color: #333;
+  color: $textColor;
 }

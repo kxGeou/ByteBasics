@@ -47,6 +47,7 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: white;
   padding: 2.5rem 1rem 2.5rem 1rem;
+  color: $textColor;
 }
 
 header {
@@ -59,7 +60,15 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.2rem;
+  gap: 1.5rem;
+  i {
+    color: $secondColor;
+    font-size: 2.3rem;
+    transition: all 0.5s ease;
+  }
+  i:hover {
+    color: $mainColor;
+  }
 }
 
 .companyLogo {
@@ -68,3 +77,5 @@ header {
   border: 1px solid black;
   background-color: white;
 }
+
+

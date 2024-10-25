@@ -2,15 +2,24 @@ import '../style/mainPage.scss'
 import '../style/hero.scss'
 import data from '../data.json';
 import HeroHuman from '../resources/Humans/human.png'
+import Arrow from '../resources/Icons/aroww.png'
 function HeroSection() {
+    const companyEmail = "grzegorz.wfb@gmail.com";
+    const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${companyEmail}`;
+
+    const handleClick = () => {
+        window.open(gmailURL, "_blank");
+    };
+
     return(
         <div className="heroSection">
             <div className="heroText">
                 <h1>{data.companyName}</h1>
                 <p>{data.HeroDescription}</p>
-                <button href="google.com">Masz jakieś pytania?</button>
+                <button onClick={handleClick}>Masz jakieś pytania?</button>
             </div>
-            <img src={HeroHuman} alt="Human on the chair programming"></img>
+            <img src={Arrow} className='arrow' alt='violet vector of arrow pointing down'></img>
+            <img src={HeroHuman} className='human' alt="Human on the chair programming"></img>
         </div>
     );
 };
