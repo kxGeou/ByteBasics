@@ -6,7 +6,7 @@ function App() {
     <div className="wrapper">
       <div className="MainPage">
         <Header></Header>
-        {/* <HeroSection></HeroSection> */}
+        <HeroSection></HeroSection>
       </div>
     </div>
   );

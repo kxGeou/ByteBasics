@@ -1,0 +1,33 @@
+$textColor: #1D1D1F;
+$mainColor: #5F43B2;
+$secondColor: #BE6FFB;
+$htmlColor: #E8765A;
+$cssColor: #7089E8;
+$jsColor: #E9D555;
+
+.heroSection {
+    margin-top: 6rem;   
+    img {
+        display: none;
+    } 
+}
+.heroText {
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        font-weight: 500;
+    }
+    p {
+        font-size: 1rem;
+        opacity: 75%;
+        line-height: 30px;
+    }
+    button {
+        margin-top: 4rem;
+        width: 16rem;
+        height: 4.5rem;
+        border-radius: 12px;
+        background-color: $mainColor;
+        color: white;
+    }
+}
