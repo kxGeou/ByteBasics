@@ -1,0 +1,66 @@
+$textColor: #1D1D1F;
+$mainColor: #5F43B2;
+$secondColor: #BE6FFB;
+$htmlColor: #E8765A;
+$cssColor: #7089E8;
+$jsColor: #E9D555;
+
+.desktop {
+    display: none;
+}
+.mainFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    padding-bottom: 0;
+    margin-top: 12rem;
+    background-color: $mainColor;
+    border-radius: 12px;
+    gap: 3rem;
+}
+.socialMedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;    
+    h2{
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+    }
+    i {
+        font-size: 3rem;
+        margin: 1rem;
+        opacity: 75%;
+        cursor: pointer;
+        transition: all 0.5s ease;
+    }
+    
+    i:hover {
+        color: $secondColor;
+      }
+}
+
+.mobile {
+    width: 12rem;
+    margin-left: -20%;
+}
+
+@media (min-width:1000px) {
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: inline-block;
+        width: 10em;    
+        transition: all 0.5s ease;
+    }
+    .desktop:hover {
+        scale: 1.1;
+    }
+    .mainFooter {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

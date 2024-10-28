@@ -31,22 +31,18 @@ $jsColor: #E9D555;
         border-radius: 12px;
         background-color: $mainColor;
         color: white;
+        transition: all 0.5s ease;
+    }
+    button:hover {
+        background-color: $secondColor;
     }
 }
 
-.arrow {
-    position: absolute;
-    bottom: -7%;
-    width: 5rem;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%,-50%);
-    animation: arrowMove 3s linear 0.5s infinite normal;
-}
+
 
 h1 {
+    display: inline-block;
     margin-bottom: 1rem;
-    width: 0;
     font-size: 1.6rem;
     font-weight: 500;
     font-size: 2.5rem;
@@ -70,7 +66,7 @@ h1 {
     from, to { border-color: transparent }
     50% { 
         border-right: 3px solid $mainColor;
-        border-color: $mainColor; 
+        border-color: $mainColor;
     }
   }
 
@@ -95,24 +91,5 @@ h1 {
     .human {
         display: block !important;
         height: 20rem;
-    }
-}
-
-
-@keyframes arrowMove {
-    0% {
-        left: 50%;
-        right: 50%;
-        transform: translate(-50%,-75%);
-    }
-    50% {
-        left: 50%;
-        right: 50%;
-        transform: translate(-50%,-50%);
-    }
-    100% {
-        left: 50%;
-        right: 50%;
-        transform: translate(-50%,-75%);
     }
 }
