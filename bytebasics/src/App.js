@@ -3,6 +3,7 @@ import Header from './components/header';
 import HeroSection from './components/heroSection';
 import MainSender from './components/mainsSender';
 import Footer from './components/footer';
+
 function App() {
   return (
     <div className="wrapper">
@@ -12,6 +13,8 @@ function App() {
         <MainSender></MainSender>
         <Footer></Footer>
       </div>
+
+     
     </div>
   );
 }
