@@ -15,7 +15,7 @@ function Footer() {
 
   return (
     <footer className="mainFooter">
-      <img src={Hand} alt="vector of hand with phone" className="desktop mobile-img" />
+      <img src={Hand} alt="vector of hand with phone" className="desktop img" />
       <div className="socialMedia">
         <h2>Social Media</h2>
         
@@ -24,6 +24,7 @@ function Footer() {
           <i onClick={() => handleOpenLink(links.facebook)} className="fa-brands fa-facebook"></i>
           <i onClick={() => handleOpenLink(links.github)} className="fa-brands fa-github"></i>
         </div>
+      <img src={Hand} alt="vector of hand with phone" className="mobile img" />
      
       </div>
     </footer>

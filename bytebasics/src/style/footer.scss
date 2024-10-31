@@ -6,14 +6,12 @@ $cssColor: #7089e8;
 $jsColor: #e9d555;
 
 
-.desktop {
-  display: none;
-}
 
 .mainFooter {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-around;
   padding: 2rem;
   padding-bottom: 0;
   margin-top: 12rem;
@@ -22,9 +20,16 @@ $jsColor: #e9d555;
   gap: 3rem;
 }
 
+.desktop {
+  width: 10rem;
+  transition: transform 0.5s ease;
+}
+.desktop:hover {
+  transform: scale(1.1);
+}
 .socialMedia {
   display: flex;
-  flex-direction: column;
+  flex-direction: column  ;
   align-items: center;
   color: white;
 
@@ -49,27 +54,29 @@ $jsColor: #e9d555;
 
 
 .mobile {
+  display: none;
   width: 12rem;
   margin-left: -20%;
 }
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
   .mobile {
-    display: none;
+    display: inline-block;
   }
 
   .desktop {
-    display: inline-block;
+    display: none;
     width: 10em;
     transition: transform 0.5s ease; 
   }
 
-  .desktop:hover {
-    transform: scale(1.1);
+  
+  .socialMedia {
+    flex-direction: column;
   }
-
+ 
   .mainFooter {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
   }
 }

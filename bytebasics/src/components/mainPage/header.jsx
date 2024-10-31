@@ -1,4 +1,4 @@
-import '../style/mainPage.scss';
+import '../../style/mainPage.scss';
 import { useCallback } from 'react';
 
 function Header() {
