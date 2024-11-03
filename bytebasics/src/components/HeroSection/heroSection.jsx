@@ -1,6 +1,5 @@
-import '../../style/mainPage.scss'
-import '../../style/hero.scss'
-import data from '../../data.json';
+import './hero.scss'
+import data from '../../DataBase/mainData/data.json'
 import HeroHuman from '../../resources/Humans/human.png'
 
 function HeroSection() {

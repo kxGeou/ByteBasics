@@ -1,5 +1,5 @@
-import '../style/footer.scss';
-import Hand from '../resources/Humans/footerHand.jpg';
+import './footer.scss';
+import Hand from '../../resources/Humans/footerHand.jpg';
 import { useCallback } from 'react';
 
 function Footer() {

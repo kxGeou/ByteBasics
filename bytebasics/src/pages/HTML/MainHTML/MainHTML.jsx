@@ -1,12 +1,12 @@
 // src/pages/MainHTML.js
 import React, { useState } from 'react';
-import '../../style/HTML/mainHTML.scss';
-import '../../style/mainPage.scss';
+import './mainHTML.scss';
+import '../../../style/globalStyles.scss';
 import ReactPaginate from 'react-paginate';
-import Header from '../../components/mainPage/header';
-import Footer from '../../assets/footer';
-import LessonData from '../../HTMLData.json';
-import SearchBar from '../../components/htmlPage/searchBar';
+import Header from '../../../components/Header/header';
+import Footer from '../../../components/Footer/footer';
+import LessonData from '../../../DataBase/HTMLData/HTMLData.json';
+import SearchBar from '../../../components/SearchBar/searchBar';
 
 function MainHTML() {
   const [lessons, setLesson] = useState(LessonData.slice(0, 100));

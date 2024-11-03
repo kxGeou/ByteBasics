@@ -1,0 +1,40 @@
+$textColor: #1D1D1F;
+$mainColor: #5F43B2;
+$secondColor: #BE6FFB;
+$htmlColor: #E8765A;
+$cssColor: #7089E8;
+$jsColor: #E9D555;
+
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+input {
+    padding: 1rem 5rem;
+    width: 50%;
+    background-color: $mainColor;
+    color: white;
+    border-radius: 12px;
+}
+
+.backBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px; 
+    color: white;
+    margin-right: 1rem;
+    height: 3.5rem;
+    width: 4.5rem;
+    background-color: $mainColor;
+}
+
+
+@media (max-width: 650px) {
+    input {
+        width: 90%;
+      }
+}

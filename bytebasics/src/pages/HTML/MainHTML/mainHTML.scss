@@ -24,17 +24,6 @@ $jsColor: #E9D555;
     }
 }
 
-.backBtn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px; 
-    color: white;
-    margin-right: 1rem;
-    height: 3.5rem;
-    width: 4.5rem;
-    background-color: $mainColor;
-}
 
 .paginationBtn {
     display: flex;
@@ -61,20 +50,6 @@ $jsColor: #E9D555;
     background-color: $mainColor;
 }
 
-.search-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-}
-input {
-    padding: 1rem 5rem;
-    width: 50%;
-    background-color: $mainColor;
-    color: white;
-    border-radius: 12px;
-}
-
 @media (max-width: 650px) {
   .paginationWrapper {
     display: flex;
@@ -96,8 +71,6 @@ input {
     margin-bottom: 0.5rem;
   }
 
-  input {
-    width: 90%;
-  }
+  
 }
 

@@ -1,8 +1,8 @@
-import '../style/mainPage.scss';
-import Header from '../components/mainPage/header';
-import HeroSection from '../components/mainPage/heroSection';
-import MainSender from '../components/mainPage/mainsSender';
-import Footer from '../assets/footer';
+import '../style/globalStyles.scss';
+import Header from '../components/Header/header';
+import HeroSection from '../components/HeroSection/heroSection';
+import MainSender from '../components/Sender/mainsSender';
+import Footer from '../components/Footer/footer';
 
 function Home() {
   return (

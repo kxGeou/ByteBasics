@@ -49,34 +49,3 @@ body {
   padding: 2.5rem 1rem 0rem 1rem;
   color: $textColor;
 }
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.iconsBox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-  i {
-    color: $secondColor;
-    font-size: 2.3rem;
-    cursor: pointer;
-    transition: all 0.5s ease;
-  }
-  i:hover {
-    color: $mainColor;
-  }
-}
-
-.companyLogo {
-  height: 3rem;
-  width: 3rem;
-  border: 1px solid black;
-  background-color: white;
-}
-
-

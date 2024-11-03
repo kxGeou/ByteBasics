@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import LessonData from '../../HTMLData.json';
-import '../../style/HTML/mainHTML.scss';
+import LessonData from '../../DataBase/HTMLData/HTMLData.json';
+import './SearchBar.scss';
 const SearchBar = ({ setLesson }) => {
   const [searchTerm, setSearchTerm] = useState('');
 

@@ -1,9 +1,10 @@
-import './style/mainPage.scss';
-import Home from './mainComponents/Home';
-import MainHTML from './pages/HTML/MainHTML';
+import './style/globalStyles.scss';
+import Home from './pages/Home';
+import MainHTML from './pages/HTML/MainHTML/MainHTML';
 import ErrorPage from './pages/ErrorPage';
-import MainJS from './pages/JS/MainJS';
-import MainCSS from './pages/CSS/MainCSS';
+import MainJS from './pages/JS/JSMain/MainJS';
+import MainCSS from './pages/CSS/MainCSS/MainCSS';
+import Introduction from './pages/HTML/HTMLpages/Introduction/Introduction';
 import {BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/HTMLMainPage" element={<MainHTML/>}></Route>
           <Route path="/CSSMainPage" element={<MainCSS/>}></Route>
           <Route path="/JSMainPage" element={<MainJS/>}></Route>
+          <Route path="/Introduction" element={<Introduction/>}></Route>
           <Route path="*" element={<ErrorPage/>}></Route>
         </Routes>
       </BrowserRouter>

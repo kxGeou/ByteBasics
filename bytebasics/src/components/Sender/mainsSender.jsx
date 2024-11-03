@@ -1,4 +1,4 @@
-import "../../style/sender.scss";
+import "./sender.scss";
 import HTMLicon from '../../resources/Icons/htmlIcon.png';
 import CSSicon from '../../resources/Icons/cssIcons.png';
 import JSicon from '../../resources/Icons/jsIcon.png';
