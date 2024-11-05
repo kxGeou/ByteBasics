@@ -1,14 +1,14 @@
 $textColor: #1D1D1F;
-$mainColor: #5F43B2;
-$secondColor: #BE6FFB;
-$htmlColor: #E8765A;
-$cssColor: #7089E8;
-$jsColor: #E9D555;
+$mainColor: #1D1D1F;
+$secondColor: #354F52;
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: $mainColor;
+    padding: 1rem 4rem;
+    border-radius: 8px;
   }
   
   .iconsBox {
@@ -17,22 +17,26 @@ header {
     align-items: center;
     gap: 1.5rem;
     i {
-      color: $secondColor;
-      font-size: 2.3rem;
+      color: white;
+      opacity: 75%;
+      font-size: 2rem;
       cursor: pointer;
       transition: all 0.5s ease;
     }
     i:hover {
-      color: $mainColor;
+      color: $secondColor;
     }
   }
   
   .companyLogo {
-    height: 3rem;
-    width: 3rem;
-    border: 1px solid black;
+    height: 2.5rem;
+    width: 2.5rem;
     background-color: white;
   }
   
-  
+@media (max-width:600px) {
+  header {
+    padding: 1rem 2rem;
+  }
+}
   

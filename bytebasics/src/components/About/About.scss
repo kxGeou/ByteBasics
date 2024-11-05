@@ -1,0 +1,94 @@
+$textColor: #1D1D1F;
+$mainColor: #1D1D1F;
+$secondColor: #354F52;
+$font: "Bayon", sans-serif;
+
+.aboutWrapper {
+    position: relative;
+    background-color: $mainColor;
+    height: 75dvh;
+    img {
+        position: absolute;
+        left: 0;
+        width: auto;
+        height: 100%;
+        opacity: 15%;
+    }
+   
+}
+
+.aboutText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+    padding: 0rem 17%;
+    h2 {
+        font-size: 6rem;
+        font-family: $font;
+        text-align: left;
+        color: white;
+    }
+    p {
+        color: white;
+        font-size: 1.50rem;
+        opacity: 75%;
+    }
+    button {
+        height: 4rem;
+        border-radius: 8px;
+        margin-top: 2rem;
+        background-color: $secondColor;
+        color: white;
+        opacity: 100%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .aboutText {
+        padding: 0rem 10%;
+    }
+}
+
+@media (max-width:1150px) {
+    .aboutText {
+        h2 {
+            font-size: 4rem;
+        }
+        p {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+
+@media (max-width: 800px) {
+    .aboutWrapper {
+        img {
+            width: 100%;
+        }
+    }
+    .aboutText {
+        padding: 0rem 5%;
+        h2 {
+            font-size: 3rem;
+        }
+        p {
+            line-height: 1.65;
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width : 500px) {
+    .aboutText {
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
+}

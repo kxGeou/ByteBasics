@@ -1,100 +1,115 @@
+@use '../../style/globalStyles.scss';
 $textColor: #1D1D1F;
-$mainColor: #5F43B2;
-$secondColor: #BE6FFB;
-$htmlColor: #E8765A;
-$cssColor: #7089E8;
-$jsColor: #E9D555;
+$mainColor: #1D1D1F;
+$secondColor: #354F52;
 
-.heroSection {
-    margin-top: 4.5rem;
+$font: "Bayon", sans-serif;
 
-    .human {
-        display: none;
-    }
+body {
+    background-image: url('../../resources/Backgrounds/texture.png');
+
+}
+.headerText,.heroSection,.arrowDown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerText, .heroSection {
+    position: relative;
+    flex-direction: column;
+}
+.heroSection{
+    height: 75dvh;
+}
+.companyName,.companyText {
+    cursor: default;
+}
+.companyName {
+    font-size: 17rem;
+    font-family: $font;
+}
+.companyText {
+    position: absolute;
+    bottom: 10%;
+    font-size: 2.3rem;
+    opacity: 50%;
 }
 
-.heroText {
-    h1 {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-        letter-spacing: 3%;
-        font-weight: 500;
-    }
-
-    p {
-        font-size: 1rem;
-        opacity: 0.75; 
-        letter-spacing: 3%;
-        line-height: 1.875rem; 
-    }
-
-    button {
-        margin-top: 3rem;
-        width: 16rem;
-        height: 4.5rem;
-        border-radius: 12px;
-        background-color: $mainColor;
+.arrowDown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $mainColor;
+    margin-top: 2rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    animation: movingArrow 2s normal infinite;
+    cursor: pointer;
+    i {
+        font-size: 1.5rem;
         color: white;
-        transition: background-color 0.5s ease; 
-
-        &:hover {
-            background-color: $secondColor;
-        }
     }
 }
 
-
-h1 {
-    display: inline-block;
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
-    font-weight: 500;
-    border-right: 0.15em solid $mainColor;
-    letter-spacing: 3%;
-    white-space: nowrap;
-    overflow: hidden;
-
-    animation: 
-        typing 3s steps(30, end) forwards,
-        blink-caret 0.75s step-end infinite;
-}
-
-
-@keyframes typing {
-    from { width: 0 }
-    to { width: 65%; }
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-right: 3px solid $mainColor; }
-}
-
-
-@media (min-width: 1000px) {
-    .heroSection {
-        display: flex;
+@keyframes movingArrow {
+    0% {
+        transform: translateY(-5%);
     }
+    50% {
+        transform: translateY(5%);
+    }
+    100%{
+        transform: translateY(-5%);
+    }
+}
 
-    .heroText {
-        h1 {
-            font-size: 3rem;
+@media (max-width: 1150px) {
+    .companyName {
+        font-size: 12rem;
+    }
+    .companyText {
+        font-size: 1.50rem;
+    }
+    .arrowDown {
+        width: 3rem;
+        height: 3rem;
+        i {
+            font-size: 1rem;
         }
-
-        p {
+    }
+}
+@media (max-width: 800px) {
+    .companyName {
+        font-size: 8rem;
+    }
+    .companyText {
+        font-size: 1rem;
+        opacity: 75%;
+    }
+    .arrowDown {
+        width: 4rem;
+        height: 4rem;
+        i {
+            font-size: 1rem;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .companyName {
+        font-size: 5rem;
+    }
+    .companyText {
+        font-size: 1rem;
+        bottom: -25%;
+        opacity: 75%;
+    }
+    .arrowDown {
+        margin-top: 5rem;
+        width: 4rem;
+        height: 4rem;
+        i {
             font-size: 1.2rem;
-            line-height: 2.1875rem;
         }
-
-        button {
-            width: 18rem;
-            height: 5rem;
-            font-size: 1.2rem;
-        }
-    }
-
-    .human {
-        display: block !important;
-        height: 20rem;
     }
 }

@@ -1,23 +1,18 @@
 import './hero.scss'
 import data from '../../DataBase/mainData/data.json'
-import HeroHuman from '../../resources/Humans/human.png'
 
 function HeroSection() {
-    const companyEmail = "grzegorz.wfb@gmail.com";
-    const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${companyEmail}`;
-
-    const handleClick = () => {
-        window.open(gmailURL, "_blank");
-    };
+  
 
     return(
         <div className="heroSection">
-            <div className="heroText">
-                <h1>{data.companyName}</h1>
-                <p>{data.HeroDescription}</p>
-                <button onClick={handleClick}>Masz jakieś pytania?</button>
+            <div className='headerText'>
+                <h1 className='companyName'>{data.companyName}</h1>
+                <p className='companyText'>{data.HeaderText}</p>
             </div>
-            <img src={HeroHuman} className='human' alt="Human on the chair programming"></img>
+            <div className='arrowDown'>
+                <i className="fa-solid fa-arrow-down arrowDownVector"></i>
+            </div>
         </div>
     );
 };

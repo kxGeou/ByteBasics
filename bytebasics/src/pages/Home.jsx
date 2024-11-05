@@ -1,7 +1,7 @@
 import '../style/globalStyles.scss';
 import Header from '../components/Header/header';
 import HeroSection from '../components/HeroSection/heroSection';
-import MainSender from '../components/Sender/mainsSender';
+import About from '../components/About/About';
 import Footer from '../components/Footer/footer';
 
 function Home() {
@@ -10,8 +10,8 @@ function Home() {
       <div className="MainPage">
         <Header></Header>
         <HeroSection></HeroSection>
-        <MainSender></MainSender>
-        <Footer></Footer>
+        <About></About>
+        {/* <Footer></Footer> */}
       </div>
 
      
