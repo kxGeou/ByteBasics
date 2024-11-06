@@ -11,7 +11,7 @@ function Home() {
         <Header></Header>
         <HeroSection></HeroSection>
         <About></About>
-        <HTMLsection></HTMLsection>
+        {/* <HTMLsection></HTMLsection> */}
         {/* <Footer></Footer> */}
       </div>
 
