@@ -1,0 +1,69 @@
+@use '../style/globalStyles.scss';
+$textColor: #1D1D1F;
+$mainColor: #1D1D1F;
+$secondColor: #354F52;
+$font: "Bayon", sans-serif;
+
+.errorBody {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    h2 {
+        font-size: 12rem;
+        font-family: $font;
+        margin-bottom: 2.5rem;
+    }
+    p {
+        position: absolute;
+        bottom: 35%;
+        font-size: 1.5rem;
+        opacity: 75%;
+    }
+
+    
+    a{
+        text-align: center;
+        border-radius: 8px;
+        padding: 1rem 2rem;
+        background-color: $mainColor;
+        color: white;
+        width: 55%;
+    }
+}
+
+@media (max-width: 850px ) {
+    .errorBody{
+        h2 {
+            font-size: 8rem;
+        }
+        p{
+            bottom: 40%;
+        }
+    }
+}
+
+@media (max-width: 550px ) {
+    .errorBody{
+        h2 {
+            font-size: 5rem;
+        }
+        p {
+            top: 50%;
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width: 380px ){
+    .errorBody {
+        h2 {
+            font-size: 4rem;
+        }
+        a {
+            font-size: .75rem;
+        }
+    }
+}
