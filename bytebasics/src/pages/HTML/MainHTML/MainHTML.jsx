@@ -1,4 +1,3 @@
-// src/pages/MainHTML.js
 import React, { useState } from 'react';
 import './mainHTML.scss';
 import '../../../style/globalStyles.scss';
@@ -19,10 +18,12 @@ function MainHTML() {
     .slice(pagesVisited, pagesVisited + lessonPerPage)
     .map((lesson) => {
       return (
-        <a key={lesson.id} className="lesson" href={lesson.LinkTo}>
-          <h3 className="title">{lesson.Level}</h3>
-          <p className="desc">{lesson.Description}</p>
-        </a>
+        <div className='lessonBody'>
+          <a key={lesson.id} className="lesson" href={lesson.LinkTo}>
+            <h3 className="title">{lesson.Level}</h3>
+            <p className="desc">{lesson.Description}</p>
+          </a>
+        </div>
       );
     });
 
@@ -34,10 +35,10 @@ function MainHTML() {
 
   return (
     <div className="wrapper">
-      <div className="mainContainer">
         <Header />
+      <div className="mainContainer">
         <SearchBar setLesson={setLesson} />
-        <div className="paginationWrapper mt-16">
+        <div className="paginationWrapper mt-12">
           {displayLessons}
           <ReactPaginate
             previousLabel={"<"}
@@ -51,7 +52,6 @@ function MainHTML() {
             activeClassName={"activeBtn"}
           />
         </div>
-        <Footer />
       </div>
     </div>
   );

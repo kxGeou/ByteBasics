@@ -13,7 +13,7 @@ function Header() {
   }, []);
   return (
     <div className="MainPage">
-        <header>
+        <header className='Mainheader'>
             <div className="iconsBox">
               <i onClick={() => handleLinkClick(links.instagramLink)} className="fa-brands fa-instagram"></i>
               <i onClick={() => handleLinkClick(links.gitHubLink)} className="fa-brands fa-github"></i>

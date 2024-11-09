@@ -1,40 +1,53 @@
 $textColor: #1D1D1F;
-$mainColor: #5F43B2;
-$secondColor: #BE6FFB;
-$htmlColor: #E8765A;
-$cssColor: #7089E8;
-$jsColor: #E9D555;
+$mainColor: #1D1D1F;
+$secColor: #2b2b2b;
+$secondColor: #354F52;
+$font: "Bayon", sans-serif;
 
 
 .search-bar {
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.inputBar {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-}
-input {
-    padding: 1rem 5rem;
-    width: 50%;
-    background-color: $mainColor;
-    color: white;
-    border-radius: 12px;
-}
-
-.backBtn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px; 
-    color: white;
-    margin-right: 1rem;
-    height: 3.5rem;
-    width: 4.5rem;
-    background-color: $mainColor;
-}
-
-
-@media (max-width: 650px) {
     input {
-        width: 90%;
-      }
+        width: 95%;
+        height: 4rem;
+        background-color: $secColor;
+        color: white !important;
+        padding: 0rem 3.5rem !important;
+        border-radius: 8px;
+        margin-right: .5rem;
+    }
+    
+    .search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4rem;
+        width: 5%;
+        color: white;
+        background-color: $mainColor;
+        border-radius: 8px;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }   
+}
+
+.experienceBar {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    .experienceBody {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $secColor;
+        color: white;
+        width: 6rem;
+        height: 2rem;
+        border-radius: 8px;
+    }
 }
