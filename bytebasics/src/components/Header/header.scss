@@ -1,42 +1,17 @@
-$textColor: #1D1D1F;
-$mainColor: #1D1D1F;
-$secondColor: #354F52;
+.wrapper {
+    position: relative;
+    padding: 3.125rem 6.25rem;
+    height: 100svh;
+    background-image: url('../../resources/Backgrounds/heroBgc.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $mainColor;
-    padding: 1rem 4rem;
-    border-radius: 8px;
-  }
-  
-  .iconsBox {
-    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
-    i {
-      color: white;
-      opacity: 75%;
-      font-size: 2rem;
-      cursor: pointer;
-      transition: all 0.5s ease;
-    }
-    i:hover {
-      color: $secondColor;
-    }
-  }
-  
-  .companyLogo {
-    height: 2.5rem;
-    width: 2.5rem;
-    background-color: white;
-  }
-  
-@media (max-width:600px) {
-  header {
-    padding: 1rem 2rem;
-  }
+    flex-direction: column;
+    color: white;
 }
-  

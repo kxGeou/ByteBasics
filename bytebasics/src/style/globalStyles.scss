@@ -35,14 +35,3 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
-.wrapper {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-body {
-  height: 100dvh;
-  font-family: "Roboto", sans-serif;
-  background-color: white;
-  padding: 2.5rem 1rem 0rem 1rem;
-  color: $textColor;
-}

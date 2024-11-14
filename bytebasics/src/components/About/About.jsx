@@ -1,5 +1,4 @@
 import React from 'react'
-import darkBackground from '../../resources/Backgrounds/grayBackground.png';
 import data from '../../DataBase/mainData/data.json';
 import './About.scss'
 function About() {
@@ -18,7 +17,6 @@ function About() {
             <p>{data.HeroDescription}</p>
             <button onClick={handleClick}>Masz jakieś pytania?</button> 
         </div>
-        <img src={darkBackground} alt="Słup z namalowanym białym graffiti" />
     </div>
   )
 }

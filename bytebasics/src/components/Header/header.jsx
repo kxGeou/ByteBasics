@@ -1,6 +1,6 @@
 import './header.scss';
 import { useCallback } from 'react';
-
+import data from '../../DataBase/mainData/data.json';
 function Header() {
   const links = {
     instagramLink: "https://www.instagram.com/kxgeou/",
@@ -12,16 +12,29 @@ function Header() {
       window.open(url, "_blank");
   }, []);
   return (
-    <div className="MainPage">
-        <header className='Mainheader'>
-            <div className="iconsBox">
-              <i onClick={() => handleLinkClick(links.instagramLink)} className="fa-brands fa-instagram"></i>
-              <i onClick={() => handleLinkClick(links.gitHubLink)} className="fa-brands fa-github"></i>
-              <i onClick={() => handleLinkClick(links.facebookLink)} className="fa-brands fa-facebook"></i>
-            </div>
-            <div className="companyLogo"></div>
-        </header> 
-        
+    <div className='wrapper'>
+      <header>
+        <nav className='navigation'>
+          <div className='logoVector'></div>
+          <div className='navigationTab'>
+            <a href='#'>Home</a>
+            <a href='#'>O nas</a>
+            <a href='#'>Nauka</a>
+            <a href='#'>Kontakt</a>
+          </div>
+        </nav>
+
+        <div className='HeroSection'>
+          <h1>{data.companyName}</h1>
+          <hr className='lineHero'></hr>
+          <p>{data.HeaderText}</p>
+          <div className='logoVectorHero'></div>
+        </div>
+
+        <div className='arrowSection'>
+        </div>
+      </header>
+
     </div>
   );
 }
