@@ -7,6 +7,7 @@ $secondColor: #354F52;
 @tailwind utilities;
 *, *::before, *::after {
   box-sizing: border-box;
+  font-family: "Roboto";
 }
 html {
   scroll-behavior: smooth;

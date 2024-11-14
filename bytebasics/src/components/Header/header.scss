@@ -1,8 +1,12 @@
+* {
+    color: #D7D4D4;
+}
+
 .wrapper {
     position: relative;
     padding: 3.125rem 6.25rem;
     height: 100svh;
-    background-image: url('../../resources/Backgrounds/heroBgc.png');
+    background-image: url('../../resources/Backgrounds/Vector.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -10,8 +14,87 @@
 
 header {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.HeroSection {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: white;
+    h1 {
+        font-family: "Roboto Serif", serif;
+        font-weight: 400;
+        font-size: 13.5rem;
+    }
+    .lineHero {
+        background-color: #fff;
+        width: 85%;
+        height: 3px;
+    }
+
+    p {
+        margin-top: 2rem;
+        text-align: center;
+        font-weight: 100;
+        opacity: 75%;
+        font-size: 2rem;
+        width: 60%;
+    }
+    .logoVectorHero {
+        margin-top: 2rem;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        border: 1px solid white;
+    }
+}
+
+.navigation {
+    position: absolute;
+    top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0rem 6.25rem;
+    .logoVector {
+        margin-top: 2rem;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        border: 1px solid white;
+    }
+    .navigationTab {
+        background-color: rgba(#181818, 0.6);
+        backdrop-filter: blur(10px);
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        a {
+            position: relative;
+            font-weight: 300;
+            margin-left: 2rem;
+            margin-right: 2rem;
+            font-size: 1.5rem;
+        }
+
+    
+        a:hover {
+            color: white;
+        }
+    }
+}
+
+
+@keyframes border {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
 }
