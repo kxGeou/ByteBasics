@@ -17,6 +17,7 @@ function Header() {
         <nav className='navigation'>
           <div className='logoVector'></div>
           <div className='navigationTab'>
+          <div className='logoVectorV'></div>
             <a href='#'>Home</a>
             <a href='#'>O nas</a>
             <a href='#'>Nauka</a>
@@ -28,10 +29,14 @@ function Header() {
           <h1>{data.companyName}</h1>
           <hr className='lineHero'></hr>
           <p>{data.HeaderText}</p>
-          <div className='logoVectorHero'></div>
+          <div className='logoVectorHero'>
+          </div>
         </div>
 
         <div className='arrowSection'>
+          <div className='arrow'>
+            <i class="fa-solid fa-arrow-down"></i>
+          </div>
         </div>
       </header>
 

@@ -2,6 +2,21 @@
     color: #D7D4D4;
 }
 
+.wrapper, header, .HeroSection, .navigationTab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logoVectorV {
+    display: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 3rem;
+}
 .wrapper {
     position: relative;
     padding: 3.125rem 6.25rem;
@@ -13,18 +28,11 @@
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100%;
+    max-width: 1720px;
 }
 
 .HeroSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     color: white;
     h1 {
         font-family: "Roboto Serif", serif;
@@ -63,13 +71,13 @@ header {
     width: 100%;
     padding: 0rem 6.25rem;
     .logoVector {
-        margin-top: 2rem;
         width: 4rem;
         height: 4rem;
         border-radius: 50%;
         border: 1px solid white;
     }
     .navigationTab {
+        flex-direction: row;
         background-color: rgba(#181818, 0.6);
         backdrop-filter: blur(10px);
         padding: 1rem 2rem;
@@ -89,12 +97,152 @@ header {
     }
 }
 
-
-@keyframes border {
-    from {
-        width: 0%;
+.arrowSection {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0rem 6.25rem;
+    .arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 4rem;
+        height: 4rem   ;
+        background-color: rgba(#FFFCFC, 0.2);
+        border: 1px solid #D7D4D4;
+        border-radius: 50%;
     }
-    to {
-        width: 100%;
+}
+
+@media (max-width: 1400px) {
+    .HeroSection {
+        h1 {
+            font-size: 10rem;
+        }
+    }
+    .navigation {
+        .logoVector {
+            width: 3rem;
+            height: 3rem;
+        }
+        .navigationTab {
+            a {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .HeroSection {
+        h1 {
+            font-size: 7rem;
+        }
+        .lineHero {
+            width: 75%;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+        .logoVectorHero {
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+    }
+    .navigation {
+        justify-content: center;
+        .logoVector {
+            display: none;
+        }
+        .navigationTab {
+            .logoVectorV {
+                display: block;
+            }
+        }
+    }
+    .arrowSection {
+        display: none;
+    }
+}
+@media (max-width: 820px) {
+    .HeroSection {
+        .lineHero {
+            width: 75%;
+        }
+        p {
+            width: 90%;
+            font-size: 1.5rem;
+        }
+        .logoVectorHero {
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+    }
+    .navigation {
+        justify-content: center;
+        .navigationTab {
+            .logoVectorV {
+                margin-right: 1rem;
+            }
+            a {
+                margin-right: 0.75rem;
+                margin-left: 0.75rem;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 630px) {
+    .HeroSection {
+        h1 {
+            font-size: 5rem;
+        }
+        .lineHero {
+            width: 90%;
+        }
+        p {
+            width: 90%;
+            font-size: 1.3rem;
+        }
+        .lineHero {
+            margin-top: 1.5rem;
+            height: 1px;
+        }
+    }
+    .navigation {
+        padding: 0rem;
+        justify-content: center;
+        .navigationTab {
+            .logoVectorV {
+                margin-right: 1rem;
+            }
+            a {
+                font-size: 1rem;
+                margin-right: 0.75rem;
+                margin-left: 0.75rem;
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .HeroSection {
+        h1 {
+            font-size: 4rem;
+        }
+        p {
+            width: 100%;
+            font-size: 1.3rem;
+        }
+        
+    }
+    .navigation {
+        top: 6%;
+        padding: 0rem;
+        justify-content: center;
     }
 }
