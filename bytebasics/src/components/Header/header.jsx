@@ -1,6 +1,7 @@
 import './header.scss';
 import { useCallback } from 'react';
 import data from '../../DataBase/mainData/data.json';
+import Logo from '../../resources/logo.png';
 function Header() {
   const links = {
     instagramLink: "https://www.instagram.com/kxgeou/",
@@ -15,9 +16,10 @@ function Header() {
     <div className='wrapper'>
       <header>
         <nav className='navigation'>
-          <div className='logoVector'></div>
+          <div className='logoVector'>
+            <img src={Logo} alt="logo of company" />
+          </div>
           <div className='navigationTab'>
-          <div className='logoVectorV'></div>
             <a href='/home'>Home</a>
             <a href='#O nas'>O nas</a>
             <a href='#Nauka'>Nauka</a>

@@ -1,7 +1,8 @@
 $textColor: #1D1D1F;
 $mainColor: #1D1D1F;
 $secondColor: #354F52;
-$contrastColor : #6b481e;
+$contrastColor : #a08360;
+$contrastColorHover : #664b2a;
 
 .aboutWrapper {
     display: flex;
@@ -33,7 +34,7 @@ $contrastColor : #6b481e;
     }
 
     a {
-        color: $textColor;
+        color: $contrastColorHover;
         opacity: 50%;
         font-size: 2rem;
     }

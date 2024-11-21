@@ -1,6 +1,8 @@
 import './footer.scss';
 import { useCallback } from 'react';
-
+import Facebook from '../../resources/icons/facebook.svg'
+import Github from '../../resources/icons/github.svg'
+import Instagram from '../../resources/icons/instagram.svg'
 function Footer() {
   const links = {
     instagram: "https://www.instagram.com/kxgeou/",
@@ -18,9 +20,9 @@ function Footer() {
         <h2>Social Media</h2>
         
         <div className="socialBox">
-          <i onClick={() => handleOpenLink(links.instagram)} className="fa-brands fa-instagram"></i>
-          <i onClick={() => handleOpenLink(links.facebook)} className="fa-brands fa-facebook"></i>
-          <i onClick={() => handleOpenLink(links.github)} className="fa-brands fa-github"></i>
+          <p onClick={() => handleOpenLink(links.facebook)}><img src={Facebook} alt="qwe" />Grzegorz Matusik</p>
+          <p onClick={() => handleOpenLink(links.github)} ><img src={Github} alt="qwe" />kxGeou</p>
+          <p onClick={() => handleOpenLink(links.instagram)}><img src={Instagram} alt="qwe" />kxGeou</p>
         </div>
      
       </div>

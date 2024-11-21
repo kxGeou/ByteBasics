@@ -9,8 +9,7 @@ function Home() {
         <Header></Header>
         <About></About>
         <Select></Select>
-        {/* <HTMLsection></HTMLsection> */}
-        {/* <Footer></Footer> */}
+        <Footer></Footer>
       </div>
 
      

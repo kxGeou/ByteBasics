@@ -9,14 +9,7 @@
     flex-direction: column;
 }
 
-.logoVectorV {
-    display: none;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    border: 1px solid white;
-    margin-right: 3rem;
-}
+
 .wrapper {
     position: relative;
     padding: 3.125rem 6.25rem;
@@ -61,8 +54,6 @@ header {
         margin-top: 2rem;
         width: 5rem;
         height: 5rem;
-        border-radius: 50%;
-        border: 1px solid white;
     }
 }
 
@@ -77,8 +68,7 @@ header {
     .logoVector {
         width: 4rem;
         height: 4rem;
-        border-radius: 50%;
-        border: 1px solid white;
+
     }
     .navigationTab {
         flex-direction: row;
@@ -156,14 +146,6 @@ header {
     }
     .navigation {
         justify-content: center;
-        .logoVector {
-            display: none;
-        }
-        .navigationTab {
-            .logoVectorV {
-                display: block;
-            }
-        }
     }
     .arrowSection {
         display: none;

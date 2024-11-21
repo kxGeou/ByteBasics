@@ -49,3 +49,47 @@ $contrastColor: #FFBD6C;
         background-color: rgba(#000000, 0.3);
     }
 }
+
+@media (max-width: 1800px) {
+    .selectBox {
+        width: 25%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .selectBody {
+        flex-direction: column;
+        justify-content: center;
+        height: 2500px;
+        padding: 5rem 1rem;
+        gap: 3rem;
+    }
+    .selectBox {
+        width: 50%;
+        height: 50%;
+    } 
+    .textBox {
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        h2 {
+            align-self: flex-start;
+        }
+    }
+}
+
+@media (max-width:930px) {
+    .selectBody {
+        gap: 5rem;
+    }
+    .selectBox {
+        width: 75%;
+        height: 25%;
+    }
+}
+
+@media (max-width:500px) {
+    .selectBox {
+        width: 85%;
+    }
+}
