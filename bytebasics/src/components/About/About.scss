@@ -1,0 +1,82 @@
+$textColor: #1D1D1F;
+$mainColor: #1D1D1F;
+$secondColor: #354F52;
+$contrastColor : #6b481e;
+
+.aboutWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+}
+.aboutText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    text-align: center;
+    line-height: 3.5rem;
+    gap: 4rem;
+    h2 {
+        font-size: 2.25rem;
+        color: $textColor;
+        font-family: "Roboto Serif", serif;
+        font-weight: 500;
+        text-align: center;
+    }
+    p{
+        color: $textColor;
+        font-size: 2rem;
+        opacity: 90%;
+    }
+
+    a {
+        color: $textColor;
+        opacity: 50%;
+        font-size: 2rem;
+    }
+    a:hover {
+        color: $contrastColor;
+    }
+}
+
+@media (max-width: 1350px) {
+    .aboutText {
+        h2 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1.75rem;
+        }
+        a {
+            font-size: 1.75rem;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .aboutText {
+        gap: 3rem;
+        width: 80%;
+        h2 {
+            font-size: 1.75rem;
+        }
+        p,a {
+            line-height: 2.5rem;
+            font-size: 1.5rem;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .aboutText {
+        gap: 2.5rem;
+        h2 {
+            font-size: 1.5rem;
+        }
+        p,a {
+            font-size: 1.25rem;
+        }
+    }
+}

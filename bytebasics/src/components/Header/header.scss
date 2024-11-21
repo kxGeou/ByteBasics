@@ -26,7 +26,11 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+h2,p,span,h1,h3, {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+      user-select: none; /* Standard syntax */
+}
 header {
     height: 100%;
     max-width: 1720px;
@@ -37,7 +41,7 @@ header {
     h1 {
         font-family: "Roboto Serif", serif;
         font-weight: 400;
-        font-size: 13.5rem;
+        font-size: 13.5rem;      
     }
     .lineHero {
         background-color: #fff;
@@ -78,8 +82,6 @@ header {
     }
     .navigationTab {
         flex-direction: row;
-        background-color: rgba(#181818, 0.6);
-        backdrop-filter: blur(10px);
         padding: 1rem 2rem;
         border-radius: 1rem;
         a {
@@ -168,6 +170,9 @@ header {
     }
 }
 @media (max-width: 820px) {
+    .wrapper {
+        background-image: url('../../resources/Backgrounds/mobileBgc.png');
+    }
     .HeroSection {
         .lineHero {
             width: 75%;

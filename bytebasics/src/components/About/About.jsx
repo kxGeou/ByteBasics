@@ -11,11 +11,11 @@ function About() {
     };
     
   return (
-    <div className='aboutWrapper'>
+    <div className='aboutWrapper' id='O nas'>
         <div className='aboutText'>
-            <h2>Czym jest Bytebasics?</h2>
+            <h2>O nas</h2>
             <p>{data.HeroDescription}</p>
-            <button onClick={handleClick}>Masz jakieś pytania?</button> 
+            <a href='#'>Dowiedz sie więcej</a>
         </div>
     </div>
   )

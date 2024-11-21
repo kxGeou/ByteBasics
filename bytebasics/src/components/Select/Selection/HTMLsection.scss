@@ -1,0 +1,32 @@
+$textColor: #1D1D1F;
+$mainColor: #1D1D1F;
+$secondColor: #354F52;
+$secondBgcColor: #21272D;
+$boxColor: #2A323B;
+$contrastColor: #FFBD6C;
+.textBox {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    h2 {
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+    }
+    p {
+        line-height: 2.25rem;
+        font-size: 1.25rem;
+    }
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $contrastColor;
+        margin-top: 2rem;
+        width: 100%;
+        height: 3.5rem;
+        color: $textColor;
+        font-size: 1.25rem;
+        font-weight: normal;
+        cursor: pointer;
+    }
+}

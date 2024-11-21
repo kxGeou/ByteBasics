@@ -2,13 +2,13 @@ import '../style/globalStyles.scss';
 import Header from '../components/Header/header';
 import About from '../components/About/About';
 import Footer from '../components/Footer/footer';
-import HTMLsection from '../components/HTMLsection/HTMLsection';
+import Select from '../components/Select/Select';
 function Home() {
   return (
       <div className="MainPage">
         <Header></Header>
-        {/* <HeroSection></HeroSection> */}
-        {/* <About></About> */}
+        <About></About>
+        <Select></Select>
         {/* <HTMLsection></HTMLsection> */}
         {/* <Footer></Footer> */}
       </div>
