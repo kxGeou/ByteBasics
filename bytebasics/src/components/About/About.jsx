@@ -15,7 +15,7 @@ function About() {
         <div className='aboutText'>
             <h2>O nas</h2>
             <p>{data.HeroDescription}</p>
-            <a href='#'>Dowiedz sie więcej</a>
+            <a href='/AboutUs'>Dowiedz sie więcej</a>
         </div>
     </div>
   )
