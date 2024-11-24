@@ -1,6 +1,7 @@
 import React from 'react'
 import './HeaderAbout.scss'
 import Art from '../../../../resources/Backgrounds/art.png';
+import Arrow from '../../../../resources/icons/secArrow.svg'
 function HeaderAbout() {
 
   const textList = [
@@ -11,13 +12,15 @@ function HeaderAbout() {
 
   return (
     <div className='aboutUsWrapper'>
+      <div className='wrap'>
         <div className='aboutTextWrapper'>
           <h2>{textList[0]}</h2>
           <hr className='line'></hr>
           <p>{textList[1]}</p>
         </div>
-
         <img src={Art} alt='guy in tech company' className='aboutUsImg'></img>
+      </div>
+      <img src={Arrow} className='arrowAbout'></img>
     </div>
   )
 }

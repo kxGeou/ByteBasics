@@ -1,0 +1,19 @@
+$textColor: #1D1D1F;
+$mainColor: #1D1D1F;
+$secondColor: #354F52;
+$secondColorH: #74797a;
+$secondBgcColor: #21272D;
+$boxColor: #2A323B;
+$contrastColor: #FFBD6C;
+
+.whyBody {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    background-color: darkslategray;
+    height: 100svh;
+    width: 100%;
+    padding: 3% 10%;
+}

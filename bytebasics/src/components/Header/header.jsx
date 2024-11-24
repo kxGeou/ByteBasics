@@ -1,7 +1,7 @@
 import './header.scss';
 import data from '../../DataBase/mainData/data.json';
 import Logo from '../../resources/logo.png';
-import Arrow from '../../resources/icons/arrowdown.svg';
+import Arrow from '../../resources/icons/arrowDown.svg';
 function Header() {
   return (
     <div className='wrapper' >
