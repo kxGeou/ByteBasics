@@ -11,9 +11,9 @@ $contrastColor: #FFBD6C;
     flex-direction: column;
     padding: 2rem;
     border-radius: 0.5rem;
-    background-color: #fff;
-    width: 30rem;
-
+    background-color: white;
+    width: 47%;
+    height: 18rem;
     h3, p {
         color: $mainColor;
     }
@@ -26,3 +26,28 @@ $contrastColor: #FFBD6C;
         font-size: 1.25rem;
     }
 }
+
+.blockBody {
+    -webkit-box-shadow: 0px 0px 71px -6px rgba(138, 140, 147, 1);
+    -moz-box-shadow: 0px 0px 71px -6px rgba(138, 140, 147, 1);
+    box-shadow: 0px 0px 71px -6px rgba(138, 140, 147, 1);
+}
+
+@media (min-width: 400px ) {
+    .blockBody{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        -webkit-box-shadow: 0px 0px 10px -4px rgba(138, 140, 147, 1);
+        -moz-box-shadow: 0px 0px 10px -4px rgba(138, 140, 147, 1);
+        box-shadow: 0px 0px 10px -4px rgba(138, 140, 147, 1);
+        h3 {
+            font-size: 1.25rem;
+        }
+        p {
+            font-size: 1.1rem;
+            text-align: center;
+        }
+    }
+}
+

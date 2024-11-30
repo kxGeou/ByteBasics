@@ -7,13 +7,48 @@ $boxColor: #2A323B;
 $contrastColor: #FFBD6C;
 
 .whyBody {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-    justify-items: center;
-    background-color: darkslategray;
-    height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
-    padding: 3% 10%;
+    height: fit-content ;
+    background-color: white;
+    gap: 4rem;
+    padding: 7.5rem 0rem;
+}
+
+.firstRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.secondRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.slogan {
+    font-size: 2.5rem;
+    color: $secondColor;
+    opacity: 75%;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 400px) {
+    .whyBody {
+        gap: 3rem;
+    }
+    .slogan {
+        margin-top: 2rem;
+        font-size: 1.25rem;
+    }
+    .firstRow, .secondRow {
+        flex-direction: column;
+        gap: 3rem;
+    }
 }

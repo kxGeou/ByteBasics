@@ -25,7 +25,6 @@ $contrastColor: #FFBD6C;
     width: 50%;
     h2 {
         font-size: 3rem;
-        font-weight: bold;
         color: $contrastColor;
         margin-bottom: 0.5rem;
     }
@@ -36,11 +35,12 @@ $contrastColor: #FFBD6C;
         margin-bottom: 2rem;
     }
     p {
+        line-height: 2.4rem;
         font-size: 1.50rem;
     }
 }
 .aboutUsImg {
-    width: 40%;
+    width: 35%;
     border-radius: 0.5rem;
 }
 
@@ -48,8 +48,8 @@ $contrastColor: #FFBD6C;
     border-radius: 50%;
     padding: 1rem;
     border: 3px solid $secondColor;
-    height: 5rem;
-    width: 5rem;
+    height: 4rem;
+    width: 4rem;
     animation: arrowMove 3s normal infinite;
 }
 
@@ -62,5 +62,32 @@ $contrastColor: #FFBD6C;
     }
     100% {
         transform: translateY(-8%);
+    }
+}
+
+@media (max-width:1350px) {
+    .aboutUsImg {
+        display: none;
+    }
+    .aboutTextWrapper{
+        width: 100%;
+    }
+    .arrowAbout {
+        margin-top: 5rem;
+    }
+}
+
+@media (max-width:600px) {
+    .aboutUsWrapper {
+        gap: 0rem;
+    }
+    .aboutTextWrapper{
+        h2 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1.25rem;
+            line-height: 2rem;
+        }
     }
 }
