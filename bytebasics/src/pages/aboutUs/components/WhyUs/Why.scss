@@ -39,7 +39,7 @@ $contrastColor: #FFBD6C;
     margin-bottom: 2rem;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 100px) {
     .whyBody {
         gap: 3rem;
     }
@@ -50,5 +50,18 @@ $contrastColor: #FFBD6C;
     .firstRow, .secondRow {
         flex-direction: column;
         gap: 3rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .slogan {
+        font-size: 1.5rem;
+    }
+    .firstRow, .secondRow {
+        flex-direction: row;
+        gap: 5rem;
+    }
+    .firstRow {
+        margin-bottom: 2rem;
     }
 }

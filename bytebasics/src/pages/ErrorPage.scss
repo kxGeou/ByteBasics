@@ -5,7 +5,6 @@ $secondColor: #354F52;
 $font: "Bayon", sans-serif;
 
 .errorBody {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,13 +16,9 @@ $font: "Bayon", sans-serif;
         margin-bottom: 2.5rem;
     }
     p {
-        position: absolute;
-        bottom: 35%;
-        font-size: 1.5rem;
-        opacity: 75%;
+        font-size: 2rem;
+        margin-bottom: 2rem;
     }
-
-    
     a{
         text-align: center;
         border-radius: 8px;

@@ -34,8 +34,6 @@ function MainHTML() {
   };
 
   return (
-    <div className="wrapper">
-        <Header />
       <div className="mainContainer">
         <SearchBar setLesson={setLesson} />
         <div className="paginationWrapper mt-12">
@@ -53,7 +51,6 @@ function MainHTML() {
           />
         </div>
       </div>
-    </div>
   );
 }
 

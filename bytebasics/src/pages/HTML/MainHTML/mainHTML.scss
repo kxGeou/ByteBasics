@@ -1,4 +1,3 @@
-@use '../../../style/globalStyles.scss';
 $textColor: #1D1D1F;
 $mainColor: #1D1D1F;
 $secColor: #191c1a;
@@ -6,20 +5,7 @@ $secondColor: #354F52;
 $secondColor: #2d4345;
 $font: "Bayon", sans-serif;
 
-
-.lessonBody {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: $secondColor;
-  color: white;
-  height: 4rem;
-  border-radius: 8px;
-  margin-top: 1rem;
-  padding: 0rem 3.5rem;
-  .lesson {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
+.mainContainer {
+  height: 100vh;
+  background-color: $mainColor;
 }
