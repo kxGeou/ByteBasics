@@ -36,7 +36,7 @@ function MainHTML() {
   return (
       <div className="mainContainer">
         <SearchBar setLesson={setLesson} />
-        <div className="paginationWrapper mt-12">
+        <div className="paginationWrapper">
           {displayLessons}
           <ReactPaginate
             previousLabel={"<"}
@@ -44,7 +44,7 @@ function MainHTML() {
             pageCount={pageCount}
             onPageChange={changePage}
             containerClassName={"paginationBtn"}
-            previousLinkClassName={"previousBtn"}
+            previousLinkClassName={"previousBtn "}
             nextLinkClassName={"nextBtn"}
             disabledClassName={"disabledBtn"}
             activeClassName={"activeBtn"}
