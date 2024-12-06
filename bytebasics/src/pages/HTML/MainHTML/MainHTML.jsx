@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import './mainHTML.scss';
 import '../../../style/globalStyles.scss';
 import ReactPaginate from 'react-paginate';
-import Header from '../../../components/Header/header';
-import Footer from '../../../components/Footer/footer';
+import HeroHTML from './HeroHTML';
 import LessonData from '../../../DataBase/HTMLData/HTMLData.json';
 import SearchBar from '../../../components/SearchBar/searchBar';
 
@@ -35,6 +34,7 @@ function MainHTML() {
 
   return (
       <div className="mainContainer">
+        <HeroHTML></HeroHTML>
         <SearchBar setLesson={setLesson} />
         <div className="paginationWrapper">
           {displayLessons}
